@@ -21,7 +21,7 @@ clicks = clicks ? parseInt(clicks) : 0;
 clickCountText.textContent = clicks;
 
 // Son du clic
-const clickSound = new Audio("click.mp3"); // optionnel
+const clickSound = new Audio("click.mp3.wav"); // optionnel
 
 clickBtn.addEventListener("click", () => {
   clicks++;
