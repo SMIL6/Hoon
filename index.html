@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Hoon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Style principal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hoon</h1>
-  </header>
 
-  <nav>
-    <ul style="display:flex; justify-content:center; list-style:none; padding:0;">
-      <li style="margin:0 15px;"><a href="#accueil" style="color:#eee; text-decoration:none;">Accueil</a></li>
-      <li style="margin:0 15px;"><a href="#projets" style="color:#eee; text-decoration:none;">Projets</a></li>
-      <li style="margin:0 15px;"><a href="#contact" style="color:#eee; text-decoration:none;">Contact</a></li>
+<!-- HEADER -->
+<header>
+  <h1 id="site-title">Hoon</h1>
+
+  <!-- Menu hamburger -->
+  <div id="menu-toggle">&#9776;</div>
+
+  <!-- Menu latéral -->
+  <nav id="menu">
+    <ul>
+      <li>Accueil</li>
+      <li>Personnalisation</li>
+      <li>Paramètres</li>
+      <li>Aide</li>
     </ul>
   </nav>
+</header>
 
-  <section id="accueil" style="text-align:center; padding:50px 20px;">
-    <h2>Bienvenue sur Hoon</h2>
-    <p>Découvrez mes projets et créations tech !</p>
+<!-- CONTENU PRINCIPAL -->
+<main>
+  <section id="empty-state">
+    <h2>Il n’y a rien ici pour le moment</h2>
+    <p>
+      Hoon est actuellement en développement.<br>
+      De nouvelles fonctionnalités arrivent bientôt.
+    </p>
+
+    <!-- CLICKER -->
+    <div id="clicker">
+      <p>HoonCoins : <span id="coins">0</span></p>
+      <button id="click-btn">Cliquer</button>
+    </div>
   </section>
+</main>
 
-  <section id="projets" style="background-color:#2a2a3f; padding:50px 20px; text-align:center;">
-    <h2>Projets</h2>
-    <p>Ici vous trouverez mes projets Minecraft, tech et web.</p>
-  </section>
+<!-- SCRIPT -->
+<script src="script.js"></script>
 
-  <section id="contact" style="padding:50px 20px; text-align:center;">
-    <h2>Contact</h2>
-    <p>Vous pouvez me contacter via email ou réseaux sociaux.</p>
-  </section>
-
-  <footer style="background-color:#4b00ff; color:#fff; text-align:center; padding:20px;">
-    © 2025 Hoon. Tous droits réservés.
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
